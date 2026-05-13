@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms | Adlon Hotel</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="../css/room-style.css">
+
+<!-- bootstrap css -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+
+<!-- logo favicon -->
+<link rel="icon" type="image/png" href="../img/logo.png">
+
+<!-- icon -->
+<link rel="stylesheet" href="../icon/font_5133841_yoi6izyebpl/iconfont.css">
+
+<!-- google font Roboto,Great Vibes  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+<!--flatpickr css-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<!--font-awesome css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!--navbar and footer cs-->
+    <link rel="stylesheet" href="../css/navbar.css">
+	<link rel="stylesheet" href="../css/footer.css">
+
+</head>
+
+<body>
+
+     <!-- navbar -->
+    <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <a href="../index.html"><span class="logo-text"><img src="../img/logo.png" alt="logo" class="logo-img">Adlon Hotel</span></a>
+        <ul class="nav align-items-center gap-5 d-none d-lg-flex">
+            <li class="nav-item">
+                <a class="nav-double-link" href="../index.html">
+                    <span>Hotel</span>
+                    <span>Hotel</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-double-link" href="about-adlon-hotel.html">
+                    <span>About us</span>
+                    <span>About us</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-double-link active" aria-current="page" href ="room-selection.html">
+                    <span>Rooms</span>
+                    <span>Rooms</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <div class="username"></div> 
+            </li>
+            <li class="nav-item d-none MyAccount">
+                <a class="nav-double-link" href="myAccount.html">
+                    <span>MyAccount</span>
+                    <span>MyAccount</span>
+                </a>
+            </li>
+            <li class="nav-item login-li">
+                <a class="nav-link" href="login.html"><button class="btn btn-outline-light sign-btn"><span class="iconfont icon-user1 me-2"></span>SIGN IN</button></a>
+            </li>
+            <li class="nav-item d-none loginout-li">
+                <button class="btn btn-outline-light sign-btn"><span class="iconfont icon-user1 me-2"></span>SIGN OUT</button>
+            </li>
+        </ul>
+
+
+    <!-- navbar-toggler -->
+    <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header mt-3">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Adlon Hotel</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-offcanvas-item">
+                <a class="nav-offcanvas-link" href="../index.html">Hotel</a>
+            </li>
+            <li class="nav-offcanvas-item">
+                <a class="nav-offcanvas-link" href="about-adlon-hotel.html">About us</a>
+            </li>
+            <li class="nav-offcanvas-item">
+                <a class="nav-offcanvas-link active" aria-current="page" href="room-selection.html">Rooms</a>
+            </li>
+            <li class="nav-offcanvas-item MyAccount d-none">
+                <a class="nav-offcanvas-link" href="myAccount.html">MyAccount</a> 
+            </li>
+            <li class="nav-offcanvas-item login-li">
+                <a class="nav-offcanvas-link" href="login.html"><button class="btn btn-outline-success sign-offcanvas-btn"><span class="iconfont icon-user1 me-2"></span>SIGN IN</button></a>
+            </li>
+            <li class="nav-offcanvas-item loginout-li d-none">
+                <button class="btn btn-outline-success sign-offcanvas-btn"><span class="iconfont icon-user1 me-2"></span>SIGN OUT</button>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- end navbar -->
+
+        
+
+        <!-- =========================
+             HERO
+        ========================== -->
+        <section class="rooms-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-tag">Luxury Stays • Elegant Comfort • Premium Service</p>
+                <h1>Discover Our Beautiful Rooms & Suites</h1>
+                <p>
+                    Choose from our carefully designed rooms, tailored for relaxation,
+                    romance, family comfort, and unforgettable premium experiences.
+                </p>
+            </div>
+        </section>
+
+        <!-- =========================
+             FILTER / BOOKING BAR
+        ========================== -->
+        <section class="booking-panel">
+            <div class="booking-header">
+                <h2>Find Your Perfect Room</h2>
+                <p>Search by stay dates, guests, and budget to explore available options.</p>
+            </div>
+
+            <div class="filters">
+                <div class="input-group">
+                    <label for="searchInput">Search</label>
+                    <div class="input-icon">
+                        <i class="fas fa-search"></i>
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search by room name or type"
+                        >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="stayDates">Stay Dates</label>
+                    <div class="input-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input
+                            type="text"
+                            id="stayDates"
+                            name="stayDates"
+                            placeholder="Select check-in and check-out dates"
+                            readonly
+                        >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="capacityFilter">Guests</label>
+                    <div class="input-icon">
+                        <i class="fas fa-user-friends"></i>
+                        <select id="capacityFilter">
+                            <option value="">All capacities</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="6">6 Guests</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="priceFilter">Budget</label>
+                    <div class="input-icon">
+                        <i class="fas fa-euro-sign"></i>
+                        <select id="priceFilter">
+                            <option value="">All prices</option>
+                            <option value="300">Up to €300</option>
+                            <option value="800">Up to €800</option>
+                            <option value="1000">Up to €1000</option>
+                            <option value="1500">Up to €1500</option>
+                            <option value="3000">Up to €3000</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group button-group">
+                    <label>&nbsp;</label>
+                    <button id="searchBtn" type="button">Check Availability</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             ROOMS GRID
+        ========================== -->
+        <section class="rooms-section">
+            <div class="section-heading">
+                <h2>Available Rooms</h2>
+                <p>Elegant spaces designed for every kind of stay.</p>
+            </div>
+
+            <div id="roomsContainer" class="rooms-grid"></div>
+            <div class="pagination" id="pagination"></div>
+        </section>
+ <!-- footer -->
+    <div class="footer">
+        <div class="container footer-container">
+            <div class="row row-cols-1 row-cols-md-4">
+                <!-- about us -->
+                <div class="col">
+                    <!-- hide title in large screen -->
+                    <h5 class="hide-title d-md-none"><button class="btn" data-bs-toggle="collapse" data-bs-target="#aboutUs" aria-expanded="false" aria-controls="aboutUs">About Us</button></h5>
+                    <!-- normal title in large screen -->
+                    <h5 class="normal-title d-none d-md-block">About Us</h5>
+                    <ul class="collapse collapse-menu d-md-block" id="aboutUs"> 
+                        <li><a class="collapse-item" href="../index.html#story">Story</a></li>
+                        <li><a class="collapse-item" href="../index.html#ourStory">History</a></li>
+                         <li><a class="collapse-item" href="../index.html#membership">Membership</a></li>
+                    </ul>
+                </div>
+                <!-- Quick links -->
+                <div class="col">
+                    <!-- hide title in large screen -->
+                    <h5 class="hide-title d-md-none"><button class="btn" data-bs-toggle="collapse" data-bs-target="#quickLinks" aria-expanded="false" aria-controls="quickLinks">Quick links</button></h5>
+                    <!-- normal title in large screen -->
+                    <h5 class="normal-title d-none d-md-block">Quick links</h5>
+                    <ul class="collapse collapse-menu d-md-block" id="quickLinks"> 
+                        <li><a class="collapse-item" href="room-selection.html">Rooms</a></li>
+                        <li><a class="collapse-item" href="about-adlon-hotel.html">About Us</a></li>
+                        <li><a class="collapse-item" href="login.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <!-- Find Help -->
+                 <div class="col">
+                    <!-- hide title in large screen -->
+                    <h5 class="hide-title d-md-none"><button class="btn" data-bs-toggle="collapse" data-bs-target="#findHelp" aria-expanded="false" aria-controls="findHelp">Find Help</button></h5>
+                    <!-- normal title in large screen -->
+                    <h5 class="normal-title d-none d-md-block">Find Help</h5>
+                    <ul class="collapse collapse-menu d-md-block" id="findHelp"> 
+                        <li>Cookie Settings</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+                <!-- Contact Us -->
+                 <div class="col">
+                    <!-- hide title in large screen -->
+                    <h5 class="hide-title d-md-none"><button class="btn" data-bs-toggle="collapse" data-bs-target="#contactUs" aria-expanded="false" aria-controls="contactUs">Contact Us</button></h5>
+                    <!-- normal title in large screen -->
+                    <h5 class="normal-title d-none d-md-block">Contact Us</h5>
+                    <ul class="collapse collapse-menu d-md-block" id="contactUs"> 
+                        <li><a class="collapse-item" href="../index.html#contact"><span class="iconfont icon-phone2 me-1"></span>Phone: +353 12345</a></li>
+                        <li><a class="collapse-item" href="../index.html#contact"><span class="iconfont icon-phone me-1"></span>Booking: +353 54321</a></li>
+                        <li><a class="collapse-item" href="../index.html#contact"><span class="iconfont icon-email me-1"></span>Email:info@adlonhotel.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- social media section -->
+        <!-- cut line 1-->
+        <hr class="cutline d-none d-sm-block">
+        <div class="social-media d-flex justify-content-center d-none d-md-flex">
+                    <div class="media-wrapper">
+                        <div class="media-btn">
+                            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-instgram"></use></svg>
+                            <span>@AdlonHotel</span>
+                        </div>
+                        <div class="media-btn">
+                        <svg class="icon" aria-hidden="true"><use xlink:href="#icon-facebook1"></use></svg>
+                            <span>@AdlonHotel</span>
+                        </div>
+                        <div class="media-btn">
+                            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-youtube"></use></svg>
+                            <span>@AdlonHotel</span>
+                        </div>
+                        <div class="media-btn">
+                            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-douyin2"></use></svg>
+                            <span>@AdlonHotel</span>
+                        </div>
+                        <div class="media-btn">
+                            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-linkin2"></use></svg>
+                            <span>@AdlonHotel</span>
+                        </div>
+                    </div>
+        </div>
+        <!-- cut line 2 -->
+        <hr class="cutline">
+        <!-- copyright -->
+        <div class="copyright">
+            <div class="text-center">
+            <p class="mb-0">&copy; 2026 Adlon Hotel</p>
+            <p>All rights reserved.</p>  
+            <p id="policy">Privacy Policy | Cookie Policy | Cookie Settings</p>
+            </div>
+        </div>       
+    </div>
+    
+    <!-- end footer -->
+
+    <!-- Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../js/room-script.js"></script>
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- iconfont js -->
+    <script src="../icon/font_5133841_yoi6izyebpl/iconfont.js"></script>
+
+    <!-- navbar js -->
+    <script src="../js/navbar.js"></script>
+</body>
+</html>
